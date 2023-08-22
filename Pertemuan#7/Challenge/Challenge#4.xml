@@ -1,0 +1,23 @@
+<?xml version="1.0"?> 
+<academic>
+	<dosen>
+		<lecturer>
+			<id>A123</id>
+			<name>Beni Bernardi</name>
+		</lecturer>
+		<lecturer>
+			<id>A124</id>
+			<name>Catur Cahyono</name>
+		</lecturer>
+	</dosen>
+	<mahasiswa>
+		<student>
+			<id>12345</id>
+			<name>Almira Wijaya</name>
+		</student>
+		<student>
+			<id>12346</id>
+			<name>Danuar Aldi</name>
+		</student>
+	</mahasiswa>
+</academic>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>challenge#6</title>
+</head>
+<body>
+	<script>
+		function isIntegerNumber() {
+			var i, allowed = "0123456789";
+			var numval=document.myForm.age.value;
+			for (i=0; i < numval.length; i++) { 
+				// if character is not a digit return false 
+				if (allowed.indexOf(numval.charAt(i)) == -1) {
+					console.log(allowed.indexOf(numval.charAt(i)));
+					window.alert ("Please fill in 'Your Age' with numeric values");
+					document.myForm.age.focus();
+					return false; 
+				}
+			}
+			return true; 
+		}
+		function isIntegerNumberRegExp() {
+			var notAllowed = /^[^0-9]/g;
+			var numval = document.myForm.age.value;
+			for (var i = 0; i < numval.length; i++) { 
+				// if character is not a digit return false 
+				if ( notAllowed.test( numval.charAt(i) ) ) {
+					window.alert ("Please fill in 'Your Age' with numeric values");
+					document.myForm.age.focus();
+					return false; 
+				}
+			}
+			return true; 
+		}
+	</script>
+	<form name="myForm" action="successful.html" method="post" onsubmit="return isIntegerNumberRegExp();">
+		Your Age: <input type="text" name="age">
+		<input type="submit">
+	</form>
+</body>
+</html>

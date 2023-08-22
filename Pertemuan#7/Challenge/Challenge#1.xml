@@ -1,0 +1,11 @@
+<?xml version="1.0"?> <!-- deklarasi XML untuk mendefinisikan XML version (1.0) -->
+<academic> <!-- elemen root (<academic>) -->
+	<student> <!-- elemen child dari root <academic> -->
+		<id>12345</id> <!-- elemen subchild dari child <student> -->
+		<name>Almira Wijaya</name> <!-- elemen subchild dari child <student>-->
+	</student>
+	<student>
+		<id>12346</id>
+		<name>Danuar Aldi</name>
+	</student>
+</academic>

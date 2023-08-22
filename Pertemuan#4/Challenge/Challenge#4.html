@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Challenge#4 - Validasi 1</title>
+</head>
+<body>
+	<form action="" method="">
+		<!-- validasi: required --> 
+		<label for="comment">Komentar:</label>
+		<input name="comment" id="comment" type="text" required/>
+		<p>
+
+		<!-- placeholder -->
+		<label for="comment2">Komentar:</label>
+		<input name="comment2" id="comment2" type="text" required placeholder="masukkan komentar"/>
+		<p>
+
+		<!-- masukan: date -->
+		<label for="birthdate">Tanggal Lahir:</label>
+		<input name="birthdate" id="birthdate" type="date" required />
+		<p>
+
+		<input type="submit" value ="Submit" name="submitbutton">
+	</form>
+	<!-- jika suatu tag <input> memiliki atribut validasi required, jika ada field masukan dgn atribut required belum diisikan maka submit tidak dapat dilakukan dan muncul tulisan untuk mengisi field ini terlebih dahulu (error message) -->
+
+</body>
+</html>

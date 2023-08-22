@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PERTANYAAN</title>
+</head>
+<body bgcolor="#3c3b6e">
+	<form action="responseQuestion.html" method="POST">
+		<table border="0" align="center" width="1000" bgcolor="white" cellpadding="10">
+			<tr bgcolor="#3c3b6e">
+				<td colspan="2" align="center" height="70">
+					<font face="verdana" size="6" color="white"><b>PERTANYAAN</b></font>
+				</td>
+			</tr>
+			<tr>
+				<td width="450">
+					<label for="fName"><font face="verdana">Nama Depan:</font></label>	
+				</td>
+				<td width="550">
+					<input type="text" id="fName" name="fName" required>
+				</td>
+			</tr>
+			<tr bgcolor="#b22234">
+				<td>
+					<label for="lName"><font face="verdana" color="white">Nama Belakang:</font></label>	
+				</td>
+				<td>
+					<input type="text" id="lName" name="lName" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="emailAddress"><font face="verdana">E-Mail:</font></label>
+				</td>
+				<td>
+					<input type="email" id="emailAddress" name="emailAddress" required>
+				</td>
+			</tr>
+			<tr bgcolor="#b22234">
+				<td>
+					<label for="noTelp"><font face="verdana" color="white">Nomor Telepon:</font></label>
+				</td>
+				<td>
+					<input type="tel" id="noTelp" name="noTelp" placeholder="xxx-xxxxxxx" required>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label for="alamat"><font face="verdana">Alamat:</font></label>
+				</td>
+				<td>
+					<input type="text" id="alamat"  name="alamat" required>
+				</td>
+			</tr>
+
+			<tr bgcolor="#b22234">
+				<td>
+					<label for="kodePos"><font face="verdana" color="white">Kode Pos:</font></label>
+				</td>
+				<td>
+					<input type="number" id="kodePos" name="kodePos">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label for="informasi"><font face="verdana">Informasi yang Ingin Ditanyakan:</font></label>
+				</td>
+				<td>
+					<input id="informasi" name="informasi" list="listInfo">
+					<datalist id="listInfo">
+						<option value="Data, teknologi, infrastruktur">
+						<option value="Perlindungan pemilih dan keterlibatan sipil">
+						<option value="Amerika Afrika">
+						<option value="Amerika Dengan Disabilitas">
+						<option value="Amerika Asia dan Pulau Pasifik">
+						<option value="Demokrat di Luar Negeri">
+						<option value="Etnis Amerika">
+						<option value="Latin">
+						<option value="Komunitas Iman">
+						<option value="Komunitas LGBTQ+">
+						<option value="Penduduk Asli Amerika">
+						<option value="Amerika Pedesaan">
+						<option value="Lansia dan Pensiunan">
+						<option value="Komunitas Usaha Kecil">
+						<option value="Anggota Serikat dan Keluarga">
+						<option value="Veteran dan Keluarga Militer">
+						<option value="Wanita">
+						<option value="Orang Muda dan Mahasiswa">
+					</datalist>
+				</td>
+			</tr>
+
+			<tr bgcolor="#b22234">
+				<td>
+					<label for="pertanyaan"><font face="verdana" color="white">Ajukan Pertanyaan:</font></label>
+				</td>
+				<td>
+					<textarea id="pertanyaan" name="pertanyaan" cols="30" rows="5"></textarea>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<label><font face="verdana">Balasan Pertanyaan Anda Akan Kami Kirim Lewat:</font></label>
+				</td>
+				<td>
+					<label for="mail"><font face="verdana">E-Mail</font></label>
+					<input type="radio" id="mail" name="balasan">
+					<label for="telp"><font face="verdana">Mobile Phone</font></label>
+					<input type="radio" id="telp" name="balasan">
+					<label for="wa"><font face="verdana">WhatsApp</font></label>
+					<input type="radio" id="wa" name="bal">
+				</td>
+			</tr>
+
+			<tr bgcolor="#b22234">
+				<td colspan="2" height="50" align="center">
+					<input type="submit" value ="Submit" name="button1">
+					<input type="reset" value ="Reset" name="button2">
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center" colspan="2" height="70">
+					<table>
+						<tr>
+							<td align="center" width="170" height="30" bgcolor="#3c3b6e">
+								<a href="index.html"><font face="verdana" size="2" color="white">Kembali ke Halaman 1</font></a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</form>
+	<br><br><br>
+</body>
+</html>

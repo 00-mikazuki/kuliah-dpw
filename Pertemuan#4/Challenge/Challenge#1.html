@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Challenge#1 - Form</title>
+</head>
+<body>
+	<form action="submit.html" method="post">
+	<!-- yang dibutuhkan untuk membuat sebuah form adalah, yang pertama elemen <form> dengan atribut action dan method,
+
+	action digunakan untuk menentukan apa yg akan terjadi setelah form dikirimkan (nilainya berupa alamat URL atau file dokumen web), 
+
+	method adalah metode http yg digunakan untuk mengirim data ke server (nilainya adalah POST (mengirimkan data atau nilai langsung ke action untuk ditampung) atau GET (menampilkan data/nilai pada URL, kemudian akan ditampung oleh action)). 
+
+	Kedua adalah elemen <label> dan <input>, label digunakan untuk melabeli suatu field masukan, input digunakan agar user bisa menginputkan sesuatu. Tag <label> dan <input> dihubungkan oleh for dan id dengan menggunakan nilai yg sama. -->
+		<label for="fName">First Name</label>:
+		<input id="fName" name= "fName" type="text"/>
+		<p>
+		<label for="lName">Last Name</label>:
+		<input id="lName" name= "lName" type="text"/>
+		<p>
+		<input type="submit" value="Submit" name="button1">
+		<input type="reset" value="Reset" name="button2">
+	</form>
+	<!-- field masukan pada slide#7 ada 4 buah, yaitu masukan First Name dengan type text, masukan Last Name dengan type text, lalu submit dan juga reset -->
+
+	<!-- field masukan pada slide#7 ada 2 buah, yaitu masukan First Name dan masukan Last Name -->
+</body>
+</html>

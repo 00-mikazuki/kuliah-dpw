@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Challenge#5 - Colspan & Rowspan</title>
+</head>
+<body>
+	<table border="1">
+		<caption><b>STATISTIK KELAS</b></caption>
+		<tr>
+			<th rowspan="2">Mata Kuliah</th>
+			<th rowspan="2">Kelas</th>
+			<th colspan="2">Jumlah Mahasiswa</th>
+		</tr>
+		<tr>
+			<th>Laki-laki</th>
+			<th>Perempuan</th>
+		</tr>
+		<tr>
+			<td rowspan="3">Dasar Pemrograman Web</td>
+			<td>A</td>
+			<td>20</td>
+			<td>22</td>
+		</tr>
+		<tr>
+			<td>B</td>
+			<td>23</td>
+			<td>19</td>
+		</tr>
+		<tr>
+			<td>C</td>
+			<td>21</td>
+			<td>21</td>
+		</tr>
+		<!-- 
+		Tambah baris 6 & 7 
+		Pada baris 6 & 7 kolom 1 digabung menjadi 1 baris
+		Kolom ke 2 biarkan
+		Kolom ke 3 4 baris 6 7 digabung  
+		-->
+		<tr>
+			<td rowspan="2"></td>
+			<td>Kolom 2</td>
+			<td rowspan="2" colspan="2"></td>
+		</tr>
+		<tr>
+			<td>Kolom 2</td>
+		</tr>
+	</table>
+</body>
+</html>

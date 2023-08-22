@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>UAS</title>
+</head>
+<body style="font-weight: bold; font-size: 20px;">
+
+<script type="text/javascript">
+	var wrong = true;
+	while(wrong) {
+		var inp = window.prompt('Masukan sebuah angka bilangan genap:');
+		var angka = /[0-9]/;
+		if(angka.test(inp)) {
+			if(inp % 2 == 0) {
+				wrong = false;
+			} else {
+				alert('Masukan angka harus berupa bilangan genap!');
+			}
+		} else {
+			alert('Masukan harus berbentuk data numerik/angka!');
+		}
+	}
+
+	document.write('<br>' + 'Angka = ' + inp + '<br>');
+	document.write('<br>' + 'SEGITIGA DERET ANGKA' + '<br>');
+
+	for(var i = 0; i < inp; i++) {
+		var urutan = '';
+		for(var j = inp; j > i; j--) {
+			urutan = urutan + j + ' ';
+		}
+
+		if(i == 0 || i == inp-1) {
+			document.write('<br>' + '<span style = "color: red;">' + urutan + '</span>' + '<br>');
+		} else {
+			document.write('<br>' + urutan + '<br>');
+		}
+	}
+</script>
+</body>
+</html>

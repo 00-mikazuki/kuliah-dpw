@@ -1,0 +1,36 @@
+body {
+	background: purple;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+table {
+	font-family: arial;
+	background: white;
+}
+
+thead {
+	background: yellow;
+}
+
+tbody {
+	line-height: 2.5;
+}
+
+.lebar {
+	width: 180px;
+}
+
+.biru {
+	background: blue;
+}
+
+.merah {
+	background: red;
+}
+
+.hijau {
+	background: green;
+}

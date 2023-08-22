@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!-- no elemen root -->
+<course cid="c1"> 
+	<title>Math 1</title> 
+	<description>Introduction to Math<description> 
+		<!-- no / -->
+</course> 
+<course cid=c2> 
+	<!-- no "" -->
+	<title>Math 2</title> 
+	<description>Intermediate Math</description> 
+</course> 
+<course cid="c3"> 
+	<title>Math 3</title> 
+	<Description>Advance Math</description> 
+	<!-- no D -->
+</course>

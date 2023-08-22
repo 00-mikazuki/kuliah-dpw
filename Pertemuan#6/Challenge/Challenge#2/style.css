@@ -1,0 +1,27 @@
+div.header { 
+	height: 100px;
+	background: salmon;
+}
+div.menu {
+	float: left;
+	width: 200px;
+	height: 420px;
+	background: lightblue;
+}
+div.sidebar {
+	float: right;
+	width: 200px;
+	height: 420px;
+	background: darkgoldenrod;
+}
+div.content {
+	margin-left: 200px;
+	margin-right: 200px;
+	height: 420px;
+	background: limegreen;
+}
+div.footer {
+	height: 100px;
+	clear: both;
+	background: darkgrey;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Challenge#8</title>
+</head>
+<body>
+	<!-- Challenge #8 -->
+	<script type="text/javascript">
+		console.log('');
+		console.log('');
+		console.log('Challenge #8');
+		console.log('string');
+		str = "this is a string";
+		aIndex = str.indexOf('a'); 
+		strEMail = "noor.ifada@trunojoyo.ac.id";
+		arrEMail = strEMail.split("@");
+		arrName = arrEMail[0].split(".");
+		arrDomain = arrEMail[1].split(".");
+		console.log(arrEMail);
+		console.log(arrName);
+		console.log(arrDomain);
+	</script>
+	<script type="text/javascript">
+		console.log('');
+		console.log('array');
+		names = ["Carrie", "Ashley", "Zia", "Bob"];
+		sortName = names.sort();
+		console.log(sortName);
+	</script>
+	<script type="text/javascript">
+		console.log('');
+		console.log('math');
+		intRandomInteger = Math.floor(Math.random()*12);
+		console.log(intRandomInteger);
+	</script>
+	<script type="text/javascript">
+		console.log('');
+		console.log('date');
+		date = new Date();
+		arrDayNames = 
+		["Sunday","Monday","Tuesday","Wednesday","Thursday",
+		"Friday","Saturday"];
+		strTodayIs = arrDayNames[date.getDay()];
+		console.log(strTodayIs);
+	</script>
+</body>
+</html>

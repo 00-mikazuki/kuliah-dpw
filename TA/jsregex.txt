@@ -1,0 +1,43 @@
+const EmailPattern = /^[\w-\.]+@+([\w-]+\.)+[\w-]{2,}$/g;
+
+1. `/` - Tanda slash awal menandakan awal dari pola regular expression.
+2. `^` - Menandakan bahwa string yang dicocokkan harus dimulai dari awal.
+3. `[\w-\.]+` - Mencocokkan satu atau lebih karakter alfanumerik (`\w`), tanda hubung (`-`), atau titik (`\.`).
+4. `@` - Mencocokkan karakter `@` secara harfiah.
+5. `([\w-]+\.)+` - Mencocokkan satu atau lebih kelompok yang terdiri dari satu atau lebih karakter alfanumerik atau tanda hubung, diikuti oleh tanda titik. Ini mengartikan bahwa domain harus terdiri dari satu atau lebih subdomain yang dipisahkan oleh tanda titik.
+6. `[\w-]{2,}` - Mencocokkan dua atau lebih karakter alfanumerik atau tanda hubung. Ini mengartikan bahwa nama domain harus terdiri dari setidaknya dua karakter setelah tanda titik terakhir.
+7. `$` - Menandakan bahwa string yang dicocokkan harus berakhir di titik terakhir.
+8. `/` - Tanda slash terakhir menandakan akhir dari pola regular expression.
+9. `g` - Flag global, yang berarti pola harus diterapkan ke seluruh string dan tidak berhenti setelah pertandingan pertama.
+
+Dalam konteks penggunaan email, regular expression ini mencoba mencocokkan string yang mengikuti pola umum untuk alamat email.
+
+
+
+const telPattern = /^[+]\d{1}(?:[0-9\-\(\)\/\.]\s?){6, 15}[0-9]{1}$/;
+
+/ - Tanda slash awal menandakan awal dari pola regular expression.
+^ - Menandakan bahwa string yang dicocokkan harus dimulai dari awal.
+[+] - Mencocokkan karakter + secara harfiah. Digunakan untuk menandakan kode negara pada nomor telepon internasional.
+\d{1} - Mencocokkan satu digit numerik. Ini mengartikan bahwa setelah karakter +, harus ada satu digit numerik.
+(?:[0-9\-\(\)\/\.]\s?) - Grup non-capturing yang mencocokkan karakter yang diizinkan untuk nomor telepon. Karakter yang diizinkan termasuk angka (0-9), tanda hubung (-), tanda kurung (( dan )), tanda slash (/), dan titik (.). \s? mencocokkan spasi opsional setelah karakter tersebut.
+{6,15} - Menandakan bahwa ada 6 hingga 15 kemunculan dari grup non-capturing sebelumnya. Ini mengartikan bahwa nomor telepon harus memiliki panjang antara 6 dan 15 karakter.
+[0-9]{1} - Mencocokkan satu digit numerik. Ini mengartikan bahwa setelah 6 hingga 15 kemunculan karakter sebelumnya, harus ada satu digit numerik.
+$ - Menandakan bahwa string yang dicocokkan harus berakhir di titik terakhir.
+/ - Tanda slash terakhir menandakan akhir dari pola regular expression.
+
+
+
+const pattern = /^[a-zA-Z\s]+$/;
+
+^ - Menandakan awal dari string.
+[a-zA-Z\s]+ - Mencocokkan satu atau lebih karakter alfabet dan spasi. Ini memastikan bahwa hanya karakter alfabet dan spasi yang diizinkan dalam nama.
+$ - Menandakan akhir dari string.
+
+
+
+const pattern = /^\d+$/;
+
+^ - Menandakan awal dari string.
+\d+ - Mencocokkan satu atau lebih digit numerik. Ini memastikan bahwa hanya digit numerik yang diizinkan dalam angka.
+$ - Menandakan akhir dari string.

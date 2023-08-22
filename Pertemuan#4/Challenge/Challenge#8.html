@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Challenge#8 - Form tabel</title>
+</head>
+<body>
+	<form action="" method="">
+		<fieldset>
+			<legend>Data Registrasi</legend>
+			<table>
+				<tr>
+					<td>
+						<label for="username">Username:</label>	
+					</td>
+					<td>
+						<input type="text" id="username" name="username" required>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label for="password">Password:</label>
+					</td>
+					<td>
+						<input type="password" id="password" name="password" required>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label for="TL">Tanggal Lahir:</label>
+					</td>
+					<td>
+						<input type="date" id="TL" name="TL" required>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label for="telepon">Telepon:</label>
+					</td>
+					<td>
+						<input type="tel" id="telepon"  name="telepon" placeholder="XXX-XXXXXXX" required>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Jenis Kelamin:
+					</td>
+					<td>
+						<label for="male">Laki-laki</label>
+						<input type="radio" id="male" name="gender">
+						<label for="male">Perempuan</label>
+						<input type="radio" id="female" name="gender" checked>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+						<label for="binary">Bersedia menerima iklan melalui email?</label>
+						<input type="checkbox" id="binary" name="binary" checked>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+						<input type="submit" value ="Submit" name="button1">
+						<input type="reset" value ="Reset" name="button2">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	<link rel="shortcut icon" href="img/logo.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div id="navbar" class="nav">
+		<div class="header">
+			<div class="logo"><a href="index.html"></a></div>
+			<div class="title">
+				<h1>DEMOCRATIC PARTY</h1>
+			</div>
+		</div>
+		<div class="menu">
+				<a href="index.html">Home</a>
+				<a href="askQuestion.html">Contact</a>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="hero2"></div>
+		<div class="content">
+			<div class="pertanyaan">
+				<div class="q-pendahuluan">
+					<h1>HUBUNGI KAMI</h1>
+				</div>
+				<div class="q-isi">
+					<form action="responseQuestion.html" method="POST">
+						<label for="fName">Nama depan*</label>
+						<input type="text" id="fName" name="firstname" required placeholder="Nama depan..">
+
+						<label for="lName">Nama belakang*</label>
+						<input type="text" id="lName" name="lastname" required placeholder="Nama belakang..">
+
+						<label for="emailAddress">Alamat email*</label>
+						<input type="email" id="emailAddress" name="emailAddress" required placeholder="emailmu@email.com">
+
+						<label for="noTelp">Nomor telepon*</label>
+						<input type="tel" id="noTelp" name="noTelp" placeholder="xxx-xxxxxxx" required>
+
+						<label for="alamat">Alamat*</label>
+						<input type="text" id="alamat"  name="alamat" required placeholder="Alamat..">
+
+						<label for="kodePos">Kode pos*</label>
+						<input type="number" id="kodePos" name="kodePos" required placeholder="12345">
+
+						<label for="informasi">Informasi yang ingin ditanyakan*</label>
+						<input id="informasi" name="informasi" list="listInfo">
+						<datalist id="listInfo">
+							<option value="infrastruktur">Data, teknologi, infrastruktur</option>
+							<option value="Perlindungan sipil">Perlindungan pemilih dan keterlibatan sipil</option>
+							<option value="Diskusi">Diskusi Jumat Community United & Partners</option>
+							<option value="klub buku">Klub Buku Kebijakan Perawatan Kesehatan</option>
+							<option value="SOS">SOS, Save Our Schools</option>
+							<option value="Better USA">Build Back Better USA's Cup of Joe Organizing Meeting</option>
+							<option value="Trump">Tidak Di Atas Hukum: Tanggapan Cepat Dakwaan Trump</option>
+							<option value="Trans">Panel Visibilitas Hari Trans</option>
+							<option value="Donasi">Gerakan Donasi Larangan Buku BDP</option>
+							<option value="Konvensi">Konvensi Demokrat Montgomery County</option>
+						</datalist>
+
+						<label for="pertanyaan">Ajukan pertanyaan*</label>
+						<textarea id="pertanyaan" name="pertanyaan" placeholder="Pertanyaan anda.."></textarea>
+
+						<label>Balasan pertanyaan anda akan kami kirim lewat*</label>
+						<div class="radio">
+							<label for="mail">Email</label>
+							<input type="radio" id="mail" name="balasan">
+							<label for="telp">Mobile phone</label>
+							<input type="radio" id="telp" name="balasan">
+						</div>
+
+						<input type="submit" value ="Submit" name="button1">
+						<input type="reset" value ="Reset" name="button2">
+
+					</form>
+				</div>
+			</div>
+
+		</div>
+			
+		<div class="sidebar">
+			<div class="bendera"></div>
+			<h3>AMERIKA SERIKAT</h3>
+			<div class="alamat">
+				<h5>DEMOCRATIC NATIONAL COMITTEE</h5>
+				<h5>430 South Capitol Street Southeast</h5>
+				<h5>Washington, DC 20003</h5>
+			</div>
+			<div class="website">
+				<a href="https://democrats.org/">Kunjungi website resmi</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		Juan Axl Ronaldio Zaka Putra. 220411100066 | Dasar Pemrograman Web A
+	</div>
+	
+
+</body>
+</html>

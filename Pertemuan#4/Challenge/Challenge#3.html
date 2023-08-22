@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Challenge#3 - Drop-down, Radio Button, Checkbox</title>
+</head>
+<body>
+	<form action="" method="">
+
+		<!-- drop-down -->
+		<!-- dorp-down dapat digunakan untuk memilih salah satu dari beberapa pilihan yang akan ditampilkan secara menurun setelah user meng-klik fieldnya, digunakan saat memiliki jumlah pilihan yg banyak -->
+		<label for="companyName">Nama Perusahaan:</label>
+		<input id="companyName" name="companyName" list="companies">
+		<datalist id="companies">
+			<option value="Dell">
+			<option value="Acer">
+			<option value="Toshiba">
+			<option value="ASUS">
+			<option value="HP">
+			<option value="Compaq">
+			<option value="Lenovo">
+			<option value="Sony">
+			<option value="Apple">
+			<option value="Axioo">
+		</datalist>
+
+		<label for="companyName2">Nama Perusahaan:</label>
+		<select id="companyName2" name="companyName2">
+			<option value="1">Dell</option>
+			<option value="2">Acer</option>
+			<option value="3">Toshiba</option>
+			<option value="4">ASUS</option>
+			<option value="5">HP</option>
+			<option value="6">Compaq</option>
+			<option value="7">Lenovo</option>
+			<option value="8">Sony</option>
+			<option value="9">Apple</option>
+			<option value="10">Axioo</option>
+		</select>
+		<br>
+
+		<!-- radio button -->
+		<!-- radio button dapat digunakan untuk memilih salah satu dari beberapa pilihan, digunakan saat memiliki jumlah pilihan yang lebih sedikit -->
+		<b>Jenis Kelamin:</b>
+		<br>
+		<label for="male">Laki-laki</label>
+		<input name="gender" id="male" value="male" checked type="radio">
+		<label for="female">Perempuan</label>
+		<input name="gender" id="female" value="female" type="radio">
+		<br>
+
+		<!-- checkbox -->
+		<!-- checkbox dapat digunakan untuk memilih suatu pilihan dengan tanda checklist, dapat digunakan untuk memilih beberapa pilihan -->
+		<label for="binary">Bersedia menerima iklan melalui email?</label>
+		<input id="binary" name="binary" type="checkbox" checked>
+
+	</form>
+</body>
+</html>

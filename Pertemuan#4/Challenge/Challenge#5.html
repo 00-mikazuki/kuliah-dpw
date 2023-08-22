@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Challenge#5 - Validasi 2</title>
+</head>
+<body>
+	<form action="" method="">
+		<!-- validasi: URL -->
+		<label for="website">URL:</label>
+		<input name="website" id="website" type="url" required />
+		<p>
+
+		<!-- masukan: number -->
+		<label for="num">Angka (1-10):</label>
+		<input name="num" id="num" min="1" max="10" type="number" required />
+		<p>
+
+		<!-- masukan: range -->
+		<label for="rangeNum">Tingkat kepuasan terhadap produk:</label>
+		Sangat tidak puas<input name="rangeNum" id="rangeNum" min="0" max="5" value="1" type="range" required />Sangat puas
+		<p>
+
+		<input type="submit" value ="Submit" name="submitbutton">
+	</form>
+	<!-- pada input type url, user harus benar benar menginputkan sebuah alamat url agar bisa melakukan submit. pada input type number, user harus memasukkan angka diantara min dan max yg telah ditentukan agar bisa melakukan submit. pada input type range, user dapat menggeser pilihan untuk menentukan nilai -->
+</body>
+</html>

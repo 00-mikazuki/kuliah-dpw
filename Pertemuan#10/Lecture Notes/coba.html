@@ -1,0 +1,207 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head> 
+		<title> Contoh Bootstrap </title>
+		<meta charset="utf-8">
+		<!-- to be responsive to mobile devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<!-- jQuery, Popper.js, dan JS plugins -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"> </script>
+	</head>
+	<body>
+		<div class="container"> <!-- ATAU <div class="container-fluid"> -->
+			<p>Kami sedang belajar menggunakan <i>Bootstrap</i></p>
+		</div>
+
+		<!-- Sistem Kolom pada Bootstrap -->
+		<div class= "row">
+			<div class="col-sm-1">span 1</div><div class="col-sm-1">span 1</div>
+			<div class="col-sm-1">span 1</div><div class="col-sm-1">span 1</div>
+			<div class="col-sm-1">span 1</div><div class="col-sm-1">span 1</div>
+			<div class="col-sm-1">span 1</div><div class="col-sm-1">span 1</div>
+			<div class="col-sm-1">span 1</div><div class="col-sm-1">span 1</div>
+			<div class="col-sm-1">span 1</div><div class="col-sm-1">span 1</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">span 4</div><div class="col-sm-4">span 4</div>
+			<div class="col-sm-4">span 4</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">span 4</div><div class="col-sm-8">span 8</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">span 6</div><div class="col-sm-6">span 6</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">span 12</div>
+		</div>
+
+		<!-- Heading pada Bootstrap -->
+		<h1>h1 Heading 1 (40px)</h1>
+		<h2>h2 Heading 2 (32px)</h2>
+		<h3>h3 Heading 3 (28px)</h3>
+		<h4>h4 Heading 4 (24px)</h4>
+		<h5>h5 Heading 5 (20px)</h5>
+		<h6>h6 Heading 6 (16px)</h6>
+
+		<!-- Blockquote pada Bootstrap -->
+		<p>Contoh quote:</p>
+		<blockquote class= "blockquote">
+			<p>No gain without pain</p>
+		</blockquote>
+
+		<!-- Konteks Warna pada Bootstrap -->
+		<p class="text-muted">This text is muted.</p>
+		<p class="text-primary">This text is important.</p>
+		<p class="text-success">This text indicates success.</p>
+		<p class="text-info">This text represents some information.</p>
+		<p class="text-warning">This text represents a warning.</p>
+		<p class="text-danger">This text represents danger.</p>
+		<p class="text-secondary">Secondary text.</p>
+		<p class="text-dark">Dark grey text.</p>
+		<p class="text-body">Body text.</p>
+		<p class="text-light">This text is light grey(on white background).</p>
+		<p class="text-white">This text is white (on white background).</p>
+
+		<!-- Konteks Background -->
+		<p class="bg-primary">This text is important.</p>
+		<p class="bg-success">This text indicates success.</p>
+		<p class="bg-info">This text represents some information.</p>
+		<p class="bg-warning">This text represents a warning.</p>
+		<p class="bg-danger">This text represents danger.</p>
+		<p class="bg-secondary">Secondary background color.</p>
+		<p class="bg-dark">Dark grey background color.</p>
+		<p class="bg-light">Light grey background color.</p>
+
+		<!-- Tabel pada Botstrap -->
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Judul 1</td><th>Judul 2</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Baris 1 Kolom 1</td><td>Baris 1 Kolom 2</td>
+				</tr>
+				<tr>
+					<td>Baris 2 Kolom 1</td><td>Baris 2 Kolom 2</td>
+				</tr>
+			<tbody>
+		</table>
+
+		<!-- Tombol pada Bootstrap -->
+		<button type="button" class="btn">Basic</button>
+		<button type="button" class="btn btn-primary">Primary</button>
+		<button type="button" class="btn btn-secondary">Secondary</button>
+		<button type="button" class="btn btn-success">Success</button>
+		<button type="button" class="btn btn-info">Info</button>
+		<button type="button" class="btn btn-warning">Warning</button>
+		<button type="button" class="btn btn-danger">Danger</button>
+		<button type="button" class="btn btn-dark">Dark</button>
+		<button type="button" class="btn btn-light">Link</button> 
+		<button type="button" class="btn btn-link">Link</button>
+
+		<!-- Layout Form: Stacked(full-width) -->
+		<form>
+			<div class="form-group">
+				<label for="username">Username:</label>
+				<input type="text" class="form-control" id="username">
+			</div>
+			<div class="form-group">
+				<label for="pwd">Password:</label>
+				<input type="password" class="form-control" id="pwd">
+			</div>
+			<button type="submit" class="btn btn-primary ">Submit</button>
+		</form>
+
+		<!-- layout Form: Inline -->
+		<form class="form-inline">
+			<label for="username">Username:</label>
+			<input type="text" class="form-control" id="username">
+			<label for="pwd">Password:</label>
+			<input type="password" class="form-control" id="pwd">
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+
+		<!-- Kontrol Form: Input -->
+		<form>
+			<div class="form-group">
+				<label for="username">Username:</label>
+				<input type="text" class="form-control" id="username">
+			</div>
+			<div class="form-group">
+				<label for="pwd">Password:</label>
+				<input type="password" class="form-control" id="pwd">
+			</div>
+		</form>
+
+		<!-- Kontrol Form: Radio Button -->
+		<form>
+			<label>Pilihan:</label>
+			<div class="form-check">
+				<label>
+					<input type="radio" class="form-check-input" name="pil1">Pilihan 1
+				</label>
+			</div>
+			<div class="form-check">
+				<label>
+					<input type="radio" class="form-check-input" name="pil2">Pilihan 2
+				</label>
+			</div>
+			<div class="form-check">
+				<label>
+					<input type="radio" class="form-check-input" name="pil3">Pilihan 3
+				</label>
+			</div>
+		</form>
+
+		<!-- Daftar Dropdown pada Bootstrap -->
+		<form>
+			<div class="form-group">
+				<label for="pil">Pilihan</label>
+				<select class="form-control" id="pil">
+					<option>Pilihan 1</option>
+					<option>Pilihan 2</option>
+					<option>Pilihan 3</option>
+				</select> 
+			</div>
+		</form>
+
+		<!-- Kontrol Form: Checkbox -->
+		<form>
+			<label>Pilihan:</label>
+			<div class="form-check">
+				<label>
+					<input type="checkbox" class="form-check-input" name="pil1">Pilihan 1
+				</label>
+			</div>
+			<div class="form-check">
+				<label>
+					<input type="checkbox" class="form-check-input" name="pil2">Pilihan 2
+				</label>
+			</div>
+			<div class="form-check">
+				<label>
+					<input type="checkbox" class="form-check-input" name="pil3">Pilihan 3
+				</label>
+			</div>
+		</form>
+
+		<!-- Kontrol Form: Text Area -->
+		<form>
+			<div class="form-group">
+				<label for="comment">Comment:</label>
+				<textarea class="form-control" rows="5" id="comment"></textarea>
+			</div>
+		</form>
+
+
+
+
+	</body>
+</html>
